@@ -5,7 +5,11 @@ from flet import *
 def main(page: Page):
     page.title = "Audio Player"
     
-    c = Container()
+    c = Container(
+        width = 700,
+        height= 700,
+        bgcolor="grey"
+    )
     
     
     
@@ -16,7 +20,7 @@ def main(page: Page):
     
     
     
-    page.add (Text ("Hello Fletizen!"))
+    page.add (c)
     
 
 flet.app(target=main, assets_dir="assets")
