@@ -8,6 +8,11 @@ def main(page: Page):
     c = Container(
         width = 700,
         height= 700,
+        gradient= LinearGradient(
+            begin= alignment.bottom_center,
+            end= alignment.top_center,
+            colors= ["lightblue600", "lightblue900"],
+        ),
         bgcolor="grey"
     )
     
