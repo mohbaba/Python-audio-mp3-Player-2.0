@@ -8,7 +8,7 @@ def main(page: Page):
     page.vertical_alignment = "center"
     
     c = Container(
-        width = 700,
+        width = 1000,
         height= 700,
         gradient= LinearGradient(
             begin= alignment.bottom_center,
