@@ -4,7 +4,8 @@ from flet import *
 
 def main(page: Page):
     page.title = "Audio Player"
-    
+    page.horizontal_alignment = "center"
+    page.vertical_alignment = "center"
     c = Container(
         width = 700,
         height= 700,
