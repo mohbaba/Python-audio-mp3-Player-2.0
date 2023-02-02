@@ -7,6 +7,16 @@ def main(page: Page):
     page.horizontal_alignment = "center"
     page.vertical_alignment = "center"
     
+    
+    # Side Bar which will contain Tracks, Playlists and "Now playing" options
+    def side_bar():
+        
+        
+        
+        pass
+    
+    
+    
     c = Container(
         width = 1000,
         height= 700,
