@@ -10,10 +10,25 @@ def main(page: Page):
     
     # Side Bar which will contain Tracks, Playlists and "Now playing" options
     def side_bar():
+        side_bar= Container(
+            padding= padding.all(20),
+            content = Column(
+                width = 330,
+                height= 500,
+                controls= [
+                    TextButton(
+                        text = 'Tracks',
+                        height = 50,
+                        width= 320,
+                        
+                    )
+                ]
+            )
+        )
         
         
         
-        pass
+        return side_bar
     
     
     
@@ -25,7 +40,7 @@ def main(page: Page):
             end= alignment.top_center,
             colors= ["lightgreen100", "lightgreen200"],
         ),
-        bgcolor="grey"
+        content = side_bar()
     )
     
     
