@@ -16,11 +16,11 @@ def main(page: Page):
                 width = 330,
                 height= 500,
                 controls= [
-                    ElevatedButton(
+                    TextButton(
                         text = 'Tracks',
                         height = 50,
                         width= 320,
-                        color = 'black'
+                        
                         
                     )
                 ]
