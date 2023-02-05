@@ -16,13 +16,18 @@ def main(page: Page):
                 width = 330,
                 height= 500,
                 controls= [
-                    TextButton(
-                        text = 'Tracks',
-                        height = 50,
-                        width= 320,
-                        
-                        
-                        
+                    Column(
+                        controls = [
+                            FilledTonalButton(
+                                text = 'Tracks',
+                                height = 50,
+                                width= 320,
+                                style = ButtonStyle(
+                                    color = {MaterialState.DEFAULT:colors.lightgreen200},
+                                    shape=RoundedRectangleBorder(radius=10),
+                                )
+                            )
+                        ]
                     )
                 ]
             )
