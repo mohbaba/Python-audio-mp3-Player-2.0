@@ -1,4 +1,4 @@
-import flet
+import flet as ft
 from flet import *
 
 
@@ -23,7 +23,7 @@ def main(page: Page):
                                 height = 50,
                                 width= 320,
                                 style = ButtonStyle(
-                                    color = {MaterialState.DEFAULT:colors.lightgreen200},
+                                    color = {ft.MaterialState.DEFAULT:ft.colors.WHITE},
                                     shape=RoundedRectangleBorder(radius=10),
                                 )
                             )
