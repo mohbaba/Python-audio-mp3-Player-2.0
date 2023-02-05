@@ -11,19 +11,21 @@ def main(page: Page):
     # Side Bar which will contain Tracks, Playlists and "Now playing" options
     def side_bar():
         side_bar= Container(
-            padding= padding.all(20),
+            padding = padding.only(top=50),
             content = Column(
                 width = 330,
                 height= 500,
                 controls= [
                     Column(
+                        
                         controls = [
-                            FilledTonalButton(
+                            TextButton(
                                 text = 'Tracks',
                                 height = 50,
-                                width= 320,
+                                width= 300,
                                 style = ButtonStyle(
-                                    color = {ft.MaterialState.DEFAULT:ft.colors.WHITE},
+                                    color = "white",
+                                    # bgcolor = "lightgreen100",
                                     shape=RoundedRectangleBorder(radius=10),
                                 )
                             )
