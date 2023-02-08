@@ -27,10 +27,51 @@ def main(page: Page):
                                     color = "white",
                                     # bgcolor = "lightgreen100",
                                     shape=RoundedRectangleBorder(radius=10),
+                                    
+                                    
                                 )
                             )
                         ]
-                    )
+                    ),
+                    Column(
+                        
+                        controls = [
+                            TextButton(
+                                text = 'Playlists',
+                                height = 50,
+                                width= 300,
+                                style = ButtonStyle(
+                                    color = "white",
+                                    # bgcolor = "lightgreen100",
+                                    shape=RoundedRectangleBorder(radius=10),
+                                    
+                                    
+                                )
+                            )
+                        ]
+                    ),
+                    Column(
+                        
+                        controls = [
+                            ElevatedButton(
+                                text = 'Now Playing',
+                                height = 50,
+                                width= 300,
+                                color = "white",
+                                elevation = 0,
+                                # opacity= 7,
+                                autofocus = False,
+                                bgcolor = "lightgreen200",
+                                style = ButtonStyle(
+                                    
+                                    
+                                    shape=RoundedRectangleBorder(radius=8),
+                                ),
+                                
+                            )
+                        ]
+                    ),
+                    
                 ]
             )
         )
