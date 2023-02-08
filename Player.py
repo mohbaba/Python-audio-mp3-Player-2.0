@@ -11,48 +11,41 @@ def main(page: Page):
     # Side Bar which will contain Tracks, Playlists and "Now playing" options
     def side_bar():
         side_bar= Container(
+            bgcolor = "lightgreen200",
             padding = padding.only(top=50),
             content = Column(
                 width = 330,
                 height= 500,
                 controls= [
                     Column(
-                        
+                        spacing = 0,
                         controls = [
-                            TextButton(
+                            ElevatedButton(
                                 text = 'Tracks',
                                 height = 50,
                                 width= 300,
+                                color = "white",
+                                elevation = 0,
+                                # opacity= 7,
+                                autofocus = False,
+                                bgcolor = "lightgreen200",
                                 style = ButtonStyle(
-                                    color = "white",
-                                    # bgcolor = "lightgreen100",
-                                    shape=RoundedRectangleBorder(radius=10),
-                                    
-                                    
-                                )
-                            )
-                        ]
-                    ),
-                    Column(
-                        
-                        controls = [
-                            TextButton(
+                                    shape=RoundedRectangleBorder(radius=8),
+                                ),
+                            ),
+                            ElevatedButton(
                                 text = 'Playlists',
                                 height = 50,
                                 width= 300,
+                                color = "white",
+                                elevation = 0,
+                                # opacity= 7,
+                                autofocus = False,
+                                bgcolor = "lightgreen200",
                                 style = ButtonStyle(
-                                    color = "white",
-                                    # bgcolor = "lightgreen100",
-                                    shape=RoundedRectangleBorder(radius=10),
-                                    
-                                    
-                                )
-                            )
-                        ]
-                    ),
-                    Column(
-                        
-                        controls = [
+                                    shape=RoundedRectangleBorder(radius=8),
+                                ),
+                            ),
                             ElevatedButton(
                                 text = 'Now Playing',
                                 height = 50,
@@ -63,19 +56,15 @@ def main(page: Page):
                                 autofocus = False,
                                 bgcolor = "lightgreen200",
                                 style = ButtonStyle(
-                                    
-                                    
                                     shape=RoundedRectangleBorder(radius=8),
                                 ),
                                 
                             )
                         ]
-                    ),
-                    
+                    )
                 ]
             )
         )
-        
         
         
         return side_bar
