@@ -61,6 +61,15 @@ def main(page: Page):
                                 
                             )
                         ]
+                    ),
+                    Row(
+                        
+                        controls = [
+                            Container(
+                                VerticalDivider(width=9, color="white",thickness=)
+                            ),
+                            VerticalDivider(width=9, color="white",thickness=),
+                        ]
                     )
                 ]
             )
