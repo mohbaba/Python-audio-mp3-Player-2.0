@@ -66,9 +66,9 @@ def main(page: Page):
                         
                         controls = [
                             Container(
-                                VerticalDivider(width=9, color="white",thickness=)
+                                VerticalDivider(width=9, color="white",thickness=3)
                             ),
-                            VerticalDivider(width=9, color="white",thickness=),
+                            
                         ]
                     )
                 ]
