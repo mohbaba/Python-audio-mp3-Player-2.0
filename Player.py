@@ -108,7 +108,97 @@ def main(page: Page):
     
     
     
-    page.add (c)
-    
+    page.add (
+                Container(
+                    
+                    width = 1000,
+                    height= 700,
+                    gradient= LinearGradient(
+                        
+                        begin= alignment.bottom_center,
+                        end= alignment.top_center,
+                        colors= ["lightgreen100", "lightgreen200"],
+                    ),
+                    
+                    content = Row(
+                        controls=[
+                            Container(
+                        
+                        bgcolor = "lightgreen200",
+                        padding = padding.only(top=50),
+                        content = Column(
+                            
+                            width = 330,
+                            height= 500,
+                            controls= [
+                                
+                                Column(
+                                    
+                                    spacing = 0,
+                                    controls = [
+                                        
+                                        ElevatedButton(
+                                            
+                                            text = 'Tracks',
+                                            height = 50,
+                                            width= 300,
+                                            color = "white",
+                                            elevation = 0,
+                                            # opacity= 7,
+                                            autofocus = False,
+                                            bgcolor = "lightgreen200",
+                                            style = ButtonStyle(
+                                                
+                                                shape=RoundedRectangleBorder(radius=8),
+                                            ),
+                                        ),
+                                        ElevatedButton(
+                                            
+                                            text = 'Playlists',
+                                            height = 50,
+                                            width= 300,
+                                            color = "white",
+                                            elevation = 0,
+                                            # opacity= 7,
+                                            autofocus = False,
+                                            bgcolor = "lightgreen200",
+                                            style = ButtonStyle(
+                                                
+                                                shape=RoundedRectangleBorder(radius=8),
+                                            ),
+                                        ),
+                                        
+                                        ElevatedButton(
+                                            
+                                            text = 'Now Playing',
+                                            height = 50,
+                                            width= 300,
+                                            color = "white",
+                                            elevation = 0,
+                                            # opacity= 7,
+                                            autofocus = False,
+                                            bgcolor = "lightgreen200",
+                                            style = ButtonStyle(
+                                                
+                                                shape=RoundedRectangleBorder(radius=8),
+                                            ),
+                                        )
+                                    ]
+                                )
+                            ]
+                        )
+                    ),
+                    
+                    ft.VerticalDivider(
+                    width= 10,
+                    color = 'white',
+                    thickness= 10
+                )
+                    
+                        ]
+                    ),
+                )
+                
+    )
 
 ft.app(target=main, assets_dir="assets")
