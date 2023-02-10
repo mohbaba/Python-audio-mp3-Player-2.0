@@ -8,75 +8,7 @@ def main(page: Page):
     page.vertical_alignment = "center"
     
     
-    # Side Bar which will contain Tracks, Playlists and "Now playing" options
-    def side_bar():
-        side_bar= Container(
-            bgcolor = "lightgreen200",
-            padding = padding.only(top=50),
-            content = Column(
-                width = 330,
-                height= 500,
-                controls= [
-                    Column(
-                        spacing = 0,
-                        controls = [
-                            ElevatedButton(
-                                text = 'Tracks',
-                                height = 50,
-                                width= 300,
-                                color = "white",
-                                elevation = 0,
-                                # opacity= 7,
-                                autofocus = False,
-                                bgcolor = "lightgreen200",
-                                style = ButtonStyle(
-                                    shape=RoundedRectangleBorder(radius=8),
-                                ),
-                            ),
-                            ElevatedButton(
-                                text = 'Playlists',
-                                height = 50,
-                                width= 300,
-                                color = "white",
-                                elevation = 0,
-                                # opacity= 7,
-                                autofocus = False,
-                                bgcolor = "lightgreen200",
-                                style = ButtonStyle(
-                                    shape=RoundedRectangleBorder(radius=8),
-                                ),
-                            ),
-                            ElevatedButton(
-                                text = 'Now Playing',
-                                height = 50,
-                                width= 300,
-                                color = "white",
-                                elevation = 0,
-                                # opacity= 7,
-                                autofocus = False,
-                                bgcolor = "lightgreen200",
-                                style = ButtonStyle(
-                                    shape=RoundedRectangleBorder(radius=8),
-                                ),
-                                
-                            )
-                        ]
-                    ),
-                    
-                    
-                    
-                    
-                    
-                ]
-            )
-        )
-        VerticalDivider(
-                                width= 10,
-                                color = 'white',
-                                thickness= 10
-                            ),
-        
-        return side_bar
+    
     
     def _divider():
         div=VerticalDivider(
@@ -96,7 +28,7 @@ def main(page: Page):
             end= alignment.top_center,
             colors= ["lightgreen100", "lightgreen200"],
         ),
-        content = side_bar()
+        
     )
     
     
@@ -178,7 +110,7 @@ def main(page: Page):
                                             text = 'Now Playing',
                                             height = 50,
                                             width= 300,
-                                            color = "white",
+                                            color = "black45",
                                             elevation = 0,
                                             # opacity= 7,
                                             autofocus = False,
@@ -196,7 +128,7 @@ def main(page: Page):
                     
                     ft.VerticalDivider(
                     width= 1,
-                    color = 'white',
+                    color = 'black12',
                     thickness= 2
                 )
                     
