@@ -123,13 +123,18 @@ def main(page: Page):
                     content = Row(
                         controls=[
                             Container(
-                        
-                        bgcolor = "lightgreen200",
-                        padding = padding.only(top=50),
-                        content = Column(
-                            
-                            width = 330,
-                            height= 500,
+                                margin = margin.only(right=-10),
+                                gradient= LinearGradient(
+                                    
+                                    begin= alignment.bottom_center,
+                                    end= alignment.top_center,
+                                    colors= ["lightgreen200", "lightgreen200"],
+                                ),
+                            padding = padding.only(top=20),
+                            content = Column(
+                                
+                                # width = 330,
+                                # height= 500,
                             controls= [
                                 
                                 Column(
@@ -190,9 +195,9 @@ def main(page: Page):
                     ),
                     
                     ft.VerticalDivider(
-                    width= 10,
+                    width= 1,
                     color = 'white',
-                    thickness= 10
+                    thickness= 2
                 )
                     
                         ]
