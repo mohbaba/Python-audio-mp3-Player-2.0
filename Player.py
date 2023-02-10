@@ -70,11 +70,23 @@ def main(page: Page):
                 ]
             )
         )
-        
+        VerticalDivider(
+                                width= 10,
+                                color = 'white',
+                                thickness= 10
+                            ),
         
         return side_bar
     
-    
+    def _divider():
+        div=VerticalDivider(
+                                width= 10,
+                                color = 'white',
+                                thickness= 10
+                            ),
+        
+        return div
+        
     
     c = Container(
         width = 1000,
@@ -99,4 +111,4 @@ def main(page: Page):
     page.add (c)
     
 
-flet.app(target=main, assets_dir="assets")
+ft.app(target=main, assets_dir="assets")
