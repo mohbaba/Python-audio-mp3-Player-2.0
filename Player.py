@@ -138,7 +138,7 @@ def main(page: Page):
                                         
                                         
                                     ),
-                                    Divider(height=5, thickness = 2, color = "black"  ),
+                                    ft.Divider(height=5, thickness = 2, color = "black"  ),
                                     Container(
                                         bgcolor = 'black',
                                         width= 700,
