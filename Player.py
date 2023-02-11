@@ -122,7 +122,7 @@ def main(page: Page):
                                 )
                             ),
                             ft.VerticalDivider(
-                            width= 1,
+                            width= 5,
                             color = 'black12',
                             thickness= 2
                             ),
@@ -134,16 +134,16 @@ def main(page: Page):
                                         bgcolor = 'black',
                                         width= 700,
                                         height = 500,
-                                        alignment= alignment.bottom_center
+                                        margin = margin.only(left=-10),
+                                        
                                         
                                     ),
                                     ft.Divider(height=9, thickness = 3, color = 'red'),
                                     Container(
                                         bgcolor = 'black',
                                         width= 700,
-                                        height = 100,
-                                        alignment= alignment.bottom_center,
-                                        
+                                        height = 90,
+                                        margin = margin.only(left=-10),
                                         
                                     ),
                                     
