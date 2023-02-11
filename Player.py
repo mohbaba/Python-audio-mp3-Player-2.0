@@ -45,7 +45,7 @@ def main(page: Page):
                 Container(
                     
                     width = 1000,
-                    height= 700,
+                    height= 600,
                     gradient= LinearGradient(
                         
                         begin= alignment.bottom_center,
@@ -58,7 +58,6 @@ def main(page: Page):
                             Container(
                                 margin = margin.only(right=-10),
                                 gradient= LinearGradient(
-                                    
                                     begin= alignment.bottom_center,
                                     end= alignment.top_center,
                                     colors= ["lightgreen200", "lightgreen200"],
@@ -66,7 +65,7 @@ def main(page: Page):
                                 padding = padding.only(top=20),
                                 content = Column(
                                 
-                                # width = 330,
+                                width = 300,
                                 # height= 500,
                                     controls= [
                                         
@@ -126,6 +125,30 @@ def main(page: Page):
                             width= 1,
                             color = 'black12',
                             thickness= 2
+                            ),
+                            Column(
+                                spacing = 0,
+                                controls =[
+                                    
+                                    Container(
+                                        bgcolor = 'black',
+                                        width= 700,
+                                        height = 500,
+                                        alignment= alignment.bottom_center
+                                        
+                                    ),
+                                    ft.Divider(height=9, thickness = 3, color = 'red'),
+                                    Container(
+                                        bgcolor = 'black',
+                                        width= 700,
+                                        height = 100,
+                                        alignment= alignment.bottom_center,
+                                        padding = padding.only(top = 60),
+                                        
+                                        
+                                    ),
+                                    
+                                ]
                             )
                         ]
                     ),
