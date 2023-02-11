@@ -143,7 +143,6 @@ def main(page: Page):
                                         width= 700,
                                         height = 100,
                                         alignment= alignment.bottom_center,
-                                        padding = padding.only(top = 60),
                                         
                                         
                                     ),
