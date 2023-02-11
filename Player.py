@@ -1,3 +1,4 @@
+import os
 import flet as ft
 from flet import *
 
@@ -62,76 +63,70 @@ def main(page: Page):
                                     end= alignment.top_center,
                                     colors= ["lightgreen200", "lightgreen200"],
                                 ),
-                            padding = padding.only(top=20),
-                            content = Column(
+                                padding = padding.only(top=20),
+                                content = Column(
                                 
                                 # width = 330,
                                 # height= 500,
-                            controls= [
+                                    controls= [
+                                        
                                 
-                                Column(
-                                    
-                                    spacing = 0,
-                                    controls = [
-                                        
-                                        ElevatedButton(
+                                        Column(
                                             
-                                            text = 'Tracks',
-                                            height = 50,
-                                            width= 300,
-                                            color = "white",
-                                            elevation = 0,
-                                            # opacity= 7,
-                                            autofocus = False,
-                                            bgcolor = "lightgreen200",
-                                            style = ButtonStyle(
+                                            spacing = 0,
+                                            controls = [
                                                 
-                                                shape=RoundedRectangleBorder(radius=8),
-                                            ),
-                                        ),
-                                        ElevatedButton(
-                                            
-                                            text = 'Playlists',
-                                            height = 50,
-                                            width= 300,
-                                            color = "white",
-                                            elevation = 0,
-                                            # opacity= 7,
-                                            autofocus = False,
-                                            bgcolor = "lightgreen200",
-                                            style = ButtonStyle(
-                                                
-                                                shape=RoundedRectangleBorder(radius=8),
-                                            ),
-                                        ),
-                                        
-                                        ElevatedButton(
-                                            
-                                            text = 'Now Playing',
-                                            height = 50,
-                                            width= 300,
-                                            color = "black45",
-                                            elevation = 0,
-                                            # opacity= 7,
-                                            autofocus = False,
-                                            bgcolor = "lightgreen200",
-                                            style = ButtonStyle(
-                                                
-                                                shape=RoundedRectangleBorder(radius=8),
-                                            ),
+                                                ElevatedButton(
+                                                    
+                                                    text = 'Tracks',
+                                                    height = 50,
+                                                    width= 300,
+                                                    color = "white",
+                                                    elevation = 0,
+                                                    # opacity= 7,
+                                                    autofocus = False,
+                                                    bgcolor = "lightgreen200",
+                                                    style = ButtonStyle(
+                                                        shape=RoundedRectangleBorder(radius=8),
+                                                    ),
+                                                ),
+                                                ElevatedButton(
+                                                    
+                                                    text = 'Playlists',
+                                                    height = 50,
+                                                    width= 300,
+                                                    color = "white",
+                                                    elevation = 0,
+                                                    # opacity= 7,
+                                                    autofocus = False,
+                                                    bgcolor = "lightgreen200",
+                                                    style = ButtonStyle(
+                                                        shape=RoundedRectangleBorder(radius=8),
+                                                    ),
+                                                ),
+                                                ElevatedButton(
+                                                    text = 'Now Playing',
+                                                    height = 50,
+                                                    width= 300,
+                                                    color = "black45",
+                                                    elevation = 0,
+                                                    # opacity= 7,
+                                                    autofocus = False,
+                                                    bgcolor = "lightgreen200",
+                                                    style = ButtonStyle(
+                                                        shape=RoundedRectangleBorder(radius=8),
+                                                    ),
+                                                )
+                                            ]
                                         )
                                     ]
                                 )
-                            ]
-                        )
-                    ),
-                    
-                    ft.VerticalDivider(
-                    width= 1,
-                    color = 'black12',
-                    thickness= 2
-                )
-                    
+                            ),
+                            ft.VerticalDivider(
+                            width= 1,
+                            color = 'black12',
+                            thickness= 2
+                            )
                         ]
                     ),
                 )
