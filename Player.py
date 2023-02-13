@@ -131,16 +131,21 @@ def main(page: Page):
                                 controls =[
                                     
                                     Container(
-                                        bgcolor = 'black',
+                                        # bgcolor = 'black',
                                         width= 700,
                                         height = 500,
                                         margin = margin.only(left=-10),
                                         
                                         
                                     ),
-                                    ft.Divider(height=5, thickness = 2, color = "black"  ),
                                     Container(
+                                        padding= padding.symmetric(horizontal = 20 , vertical = 10),
                                         bgcolor = 'black',
+                                        content = Divider(height=50, thickness = 2, color = colors.BLACK  ) 
+                                        ),
+                                    
+                                    Container(
+                                        # bgcolor = 'black',
                                         width= 700,
                                         height = 90,
                                         margin = margin.only(left=-10),
