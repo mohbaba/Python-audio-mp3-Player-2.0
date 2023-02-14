@@ -138,8 +138,11 @@ def main(page: Page):
                                         
                                         
                                     ),
+                                    Container(
+                                        
+                                        content = ft.Divider(thickness = 3.0, color = 'black', )
+                                    ),
                                     
-                                    ft.Divider(thickness = 3.0, color = 'black', ),
                                     
                                     
                                     Container(
