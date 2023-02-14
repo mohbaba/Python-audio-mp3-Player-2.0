@@ -138,10 +138,9 @@ def main(page: Page):
                                         
                                         
                                     ),
-                                    Container(
-                                        bgcolor = 'black',
-                                        content = Divider(height=50, thickness = 2, color = colors.BLACK  ) 
-                                        ),
+                                    
+                                    ft.Divider(thickness = 3.0, color = 'black', ),
+                                    
                                     
                                     Container(
                                         # bgcolor = 'black',
