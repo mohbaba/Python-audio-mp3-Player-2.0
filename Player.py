@@ -139,7 +139,6 @@ def main(page: Page):
                                         
                                     ),
                                     Container(
-                                        padding= padding.symmetric(horizontal = 20 , vertical = 10),
                                         bgcolor = 'black',
                                         content = Divider(height=50, thickness = 2, color = colors.BLACK  ) 
                                         ),
