@@ -174,10 +174,12 @@ def main(page: Page):
                                                 Column(
                                                     controls = [
                                                         Container(
+                                                            
+                                                            alignment = alignment.center,
                                                             content = Row(
                                                                 controls = [
                                                                     Image(
-                                                                        src = f'assets/previous.png',
+                                                                        src = f'assets/back (1).png',
                                                                         width = 50,
                                                                         height = 30,
                                                                         color = 'white',
@@ -189,7 +191,7 @@ def main(page: Page):
                                                                         color = 'white',
                                                                     ),
                                                                     Image(
-                                                                        src = f'assets/next.png',
+                                                                        src = f'assets/Next-b.png',
                                                                         width = 50,
                                                                         height = 30,
                                                                         color = 'white',
