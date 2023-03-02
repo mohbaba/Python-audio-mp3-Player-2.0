@@ -139,8 +139,14 @@ def main(page: Page):
                                         
                                     ),
                                     Container(
-                                        
-                                        content = ft.Divider(thickness = 3.0, color = 'black', )
+                                        # bgcolor = 'red',
+                                        height = 10,
+                                        width = 700,
+                                        margin = margin.only(left=-10),
+                                        content = Divider(
+                                            thickness = 3.0,
+                                            color = 'black',
+                                            )
                                     ),
                                     
                                     
@@ -150,7 +156,36 @@ def main(page: Page):
                                         width= 700,
                                         height = 90,
                                         margin = margin.only(left=-10),
-                                        
+                                        content = Column(
+                                            controls = [
+                                                Column(
+                                                    
+                                                    controls = [
+                                                        Container(
+                                                            padding = padding.only(top = 0),
+                                                            alignment = alignment.center,
+                                                            content = ProgressBar(
+                                                                width = 400,
+                                                                value = 0.5,
+                                                                )
+                                                            ),
+                                                        ]
+                                                    ),
+                                                Column(
+                                                    controls = [
+                                                        Row(
+                                                            controls = [
+                                                                Image(
+                                                                src = f'assets/previous.png',
+                                                                width = 50,
+                                                                height = 50,
+                                                                )
+                                                            ]
+                                                        )
+                                                    ]
+                                                )
+                                            ]
+                                        )
                                     ),
                                     
                                 ]
