@@ -173,16 +173,31 @@ def main(page: Page):
                                                     ),
                                                 Column(
                                                     controls = [
-                                                        Row(
-                                                            controls = [
-                                                                Image(
-                                                                src = f'assets/previous.png',
-                                                                width = 50,
-                                                                height = 50,
-                                                                )
-                                                            ]
+                                                        Container(
+                                                            content = Row(
+                                                                controls = [
+                                                                    Image(
+                                                                        src = f'assets/previous.png',
+                                                                        width = 50,
+                                                                        height = 30,
+                                                                        color = 'white',
+                                                                    ),
+                                                                    Image(
+                                                                        src = f'assets/play.png',
+                                                                        width = 50,
+                                                                        height = 30,
+                                                                        color = 'white',
+                                                                    ),
+                                                                    Image(
+                                                                        src = f'assets/next.png',
+                                                                        width = 50,
+                                                                        height = 30,
+                                                                        color = 'white',
+                                                                    ),
+                                                                ]
+                                                            )
                                                         )
-                                                    ]
+                                                    ],
                                                 )
                                             ]
                                         )
