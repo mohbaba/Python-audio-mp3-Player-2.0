@@ -162,7 +162,7 @@ def main(page: Page):
                                                     
                                                     controls = [
                                                         Container(
-                                                            padding = padding.only(top = 0),
+                                                            padding = padding.only(top =10),
                                                             alignment = alignment.center,
                                                             content = ProgressBar(
                                                                 width = 400,
