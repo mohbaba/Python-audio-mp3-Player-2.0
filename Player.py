@@ -38,7 +38,17 @@ def main(page: Page):
         files = os.listdir(home_dir)
         for file in files:
             button = ElevatedButton(
-                text = file
+                text = file,
+                height = 50,
+                width= 200,
+                color = "white",
+                elevation = 0,
+                # opacity= 7,
+                autofocus = False,
+                bgcolor = "lightgreen200",
+                style = ButtonStyle(
+                    shape=RoundedRectangleBorder(radius=8),
+                ),
             )
             button_column = cont.append(button)
             page.update()
