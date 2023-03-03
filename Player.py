@@ -173,10 +173,12 @@ def main(page: Page):
                                                     ),
                                                 Column(
                                                     controls = [
+                                                        
                                                         Container(
-                                                            
-                                                            alignment = alignment.center,
+                                                            # alignment = alignment.center,
+                                                            bgcolor = 'black',
                                                             content = Row(
+                                                                alignment = 'center',
                                                                 controls = [
                                                                     Image(
                                                                         src = f'assets/back (1).png',
