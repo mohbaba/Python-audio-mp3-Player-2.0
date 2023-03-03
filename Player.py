@@ -154,7 +154,7 @@ def main(page: Page):
                                     Container(
                                         # bgcolor = 'black',
                                         width= 700,
-                                        height = 90,
+                                        height = 120,
                                         margin = margin.only(left=-10),
                                         content = Column(
                                             controls = [
@@ -179,24 +179,22 @@ def main(page: Page):
                                                             content = Row(
                                                                 alignment = 'center',
                                                                 controls = [
-                                                                    Image(
-                                                                        src = f'assets/back (1).png',
-                                                                        width = 50,
-                                                                        height = 30,
-                                                                        color = 'white',
-                                                                    ),
-                                                                    Image(
-                                                                        src = f'assets/play.png',
-                                                                        width = 50,
-                                                                        height = 30,
-                                                                        color = 'white',
-                                                                    ),
-                                                                    Image(
-                                                                        src = f'assets/Next-b.png',
-                                                                        width = 50,
-                                                                        height = 30,
-                                                                        color = 'white',
-                                                                    ),
+                                                                    IconButton(
+                                                                        icon= icons.SKIP_PREVIOUS_ROUNDED,
+                                                                        icon_color = 'white',
+                                                                        icon_size = 50  
+                                                                        ),
+                                                                    IconButton(
+                                                                        icon= icons.PLAY_CIRCLE_ROUNDED,
+                                                                        icon_color = 'white',
+                                                                        icon_size = 50  
+                                                                        ),
+                                                                    IconButton(
+                                                                        icon= icons.SKIP_NEXT_ROUNDED,
+                                                                        icon_color = 'white',
+                                                                        icon_size = 50  
+                                                                        ),
+                                                                    
                                                                 ]
                                                             )
                                                         )
