@@ -3,10 +3,20 @@ import flet as ft
 from flet import *
 
 
+home_dir = os.path.expanduser("~\Music")
+
+files = os.listdir(home_dir)
+
+# for files in rocks:
+#     print(rocks)
+
+
 def main(page: Page):
     page.title = "Audio Player"
     page.horizontal_alignment = "center"
     page.vertical_alignment = "center"
+    
+    
     
     
     
@@ -21,19 +31,24 @@ def main(page: Page):
         return div
         
     
-    c = Container(
-        width = 1000,
-        height= 700,
-        gradient= LinearGradient(
-            begin= alignment.bottom_center,
-            end= alignment.top_center,
-            colors= ["lightgreen100", "lightgreen200"],
-        ),
+    
+    cont = []
+    # This function lists the tracks as buttons in the container
+    def tracks_button(e):
+        files = os.listdir(home_dir)
+        for file in files:
+            button = ElevatedButton(
+                text = file
+            )
+            button_column = cont.append(button)
+            page.update()
         
-    )
+        
+        
     
     
     
+
     
     
     
@@ -85,6 +100,7 @@ def main(page: Page):
                                                     # opacity= 7,
                                                     autofocus = False,
                                                     bgcolor = "lightgreen200",
+                                                    on_click = tracks_button,
                                                     style = ButtonStyle(
                                                         shape=RoundedRectangleBorder(radius=8),
                                                     ),
@@ -133,8 +149,9 @@ def main(page: Page):
                                     Container(
                                         # bgcolor = 'black',
                                         width= 700,
-                                        height = 500,
+                                        height = 470,
                                         margin = margin.only(left=-10),
+                                        content = ListView(cont)
                                         
                                         
                                     ),
@@ -145,7 +162,7 @@ def main(page: Page):
                                         margin = margin.only(left=-10),
                                         content = Divider(
                                             thickness = 3.0,
-                                            color = 'black',
+                                            color = 'black45',
                                             )
                                     ),
                                     
