@@ -175,8 +175,7 @@ def main(page: Page):
                                                     controls = [
                                                         
                                                         Container(
-                                                            # alignment = alignment.center,
-                                                            bgcolor = 'black',
+                                                            
                                                             content = Row(
                                                                 alignment = 'center',
                                                                 controls = [
