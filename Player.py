@@ -1,5 +1,8 @@
 import os
 import flet as ft
+from pydub import AudioSegment
+import pygame
+from pygame import mixer
 from flet import *
 
 
@@ -16,10 +19,23 @@ def main(page: Page):
     page.horizontal_alignment = "center"
     page.vertical_alignment = "center"
     
+    def play(file):
+        os.chdir(home_dir)
+        mixer.init()
+        mixer.music.load(file)
+        mixer.music.play()
+        while mixer.music.get_busy():
+            pygame.time.Clock().tick(10)
+        page.update()
+        
     
+    def playall():
+        
+        pass
     
-    
-    
+    def pause():
+        
+        pass
     
     def _divider():
         div=VerticalDivider(
@@ -39,28 +55,23 @@ def main(page: Page):
         for file in files:
             button = ElevatedButton(
                 text = file,
-                height = 50,
-                width= 200,
+                height = 45,
+                width= 300,
                 color = "white",
                 elevation = 0,
                 # opacity= 7,
                 autofocus = False,
                 bgcolor = "lightgreen200",
+                on_click= lambda f = file: play(f),
                 style = ButtonStyle(
-                    shape=RoundedRectangleBorder(radius=8),
+                    shape=RoundedRectangleBorder(radius=4),
                 ),
             )
-            button_column = cont.append(button)
+            cont.append(button)
             page.update()
         
         
         
-    
-    
-    
-
-    
-    
     
     
     
@@ -148,7 +159,7 @@ def main(page: Page):
                                 )
                             ),
                             ft.VerticalDivider(
-                            width= 5,
+                            width= 3,
                             color = 'black12',
                             thickness= 2
                             ),
@@ -161,14 +172,14 @@ def main(page: Page):
                                         width= 700,
                                         height = 470,
                                         margin = margin.only(left=-10),
-                                        content = ListView(cont)
+                                        content = ListView(cont,spacing =0, padding = 10)
                                         
                                         
                                     ),
                                     Container(
                                         # bgcolor = 'red',
                                         height = 10,
-                                        width = 700,
+                                        width = 695,
                                         margin = margin.only(left=-10),
                                         content = Divider(
                                             thickness = 3.0,
