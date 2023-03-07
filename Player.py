@@ -19,14 +19,14 @@ def main(page: Page):
     page.horizontal_alignment = "center"
     page.vertical_alignment = "center"
     
-    def play(file):
-        os.chdir(home_dir)
+    def play(file_name):
+        file_path = os.path.join(home_dir, file_name)
         mixer.init()
-        mixer.music.load(file)
+        mixer.music.load(file_path)
         mixer.music.play()
         while mixer.music.get_busy():
             pygame.time.Clock().tick(10)
-        page.update()
+        
         
     
     def playall():
@@ -52,9 +52,9 @@ def main(page: Page):
     # This function lists the tracks as buttons in the container
     def tracks_button(e):
         files = os.listdir(home_dir)
-        for file in files:
+        for file_name in files:
             button = ElevatedButton(
-                text = file,
+                text = file_name,
                 height = 45,
                 width= 300,
                 color = "white",
@@ -62,7 +62,7 @@ def main(page: Page):
                 # opacity= 7,
                 autofocus = False,
                 bgcolor = "lightgreen200",
-                on_click= lambda f = file: play(f),
+                on_click=lambda file_name= file_name: play(file_name),
                 style = ButtonStyle(
                     shape=RoundedRectangleBorder(radius=4),
                 ),
