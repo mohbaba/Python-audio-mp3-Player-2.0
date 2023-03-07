@@ -19,8 +19,10 @@ def main(page: Page):
     page.horizontal_alignment = "center"
     page.vertical_alignment = "center"
     
-    def play(file_name):
-        file_path = os.path.join(home_dir, file_name)
+    def play(event):
+        # home_dir = os.path.expanduser("~\Music")
+        file = event.text
+        file_path = os.path.join(home_dir, file)
         mixer.init()
         mixer.music.load(file_path)
         mixer.music.play()
